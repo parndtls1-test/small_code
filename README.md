@@ -1,1 +1,1 @@
-# Small code snippets
+# Small code snippets and other stuff
