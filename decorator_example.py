@@ -31,22 +31,22 @@ print(mult(3, 8))
 
 # --or-- user decorator
 @counter
-def add(a:int, b:int=0):
+def add2(a:int, b:int=0):
     '''add two integers'''
     return a + b
 
-print(add(10, 20))
-print(add(10))
-print(add(20,40))
+print(add2(10, 20))
+print(add2(10))
+print(add2(20,40))
 
 @counter
-def mult(a: int, b: int=1):
+def mult2(a: int, b: int=1):
     '''multiply two integers'''
     return a * b
 	
-print(mult(1, 2))
-print(mult(1))
-print(mult(3, 8))
+print(mult2(1, 2))
+print(mult2(1))
+print(mult2(3, 8))
 
 	
 

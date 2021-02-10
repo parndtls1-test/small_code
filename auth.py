@@ -9,7 +9,7 @@ def get_current_account():
 
 def set_active_user(account):
     '''Set current active gcloud user'''
-    user_cmd = f'gcloud confie set account {account}'
+    user_cmd = f'gcloud confie set account {account}'ll
     subprocess.run(user_cmd, shell=True, capture_output=True, check=True)
 
 def revoke_active_user(account):
