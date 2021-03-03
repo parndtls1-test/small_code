@@ -47,10 +47,4 @@ def mult2(a: int, b: int=1):
 print(mult2(1, 2))
 print(mult2(1))
 print(mult2(3, 8))
-
-	
-
-
-
-
 	
