@@ -13,5 +13,4 @@ for i, j in enumerate(x):
         if not first:
             first = j
 
-
 print(first, last)
