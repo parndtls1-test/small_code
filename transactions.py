@@ -24,4 +24,4 @@ command = "(al)G(al)()()G"
 #"(alGalooG"
 #Expected
 #"alGalooG"
-print(interpret(command))    
+print(interpret(command))
