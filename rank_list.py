@@ -10,4 +10,4 @@ while idx <= len(x)-1:
             res += 1
     idx += 1
 
-print(res)    
+print(res)
