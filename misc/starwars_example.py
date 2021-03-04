@@ -1,5 +1,4 @@
 import csv
-import pytest
 import requests
 
 PEOPLE_URL = 'https://swapi.dev/api/people/'

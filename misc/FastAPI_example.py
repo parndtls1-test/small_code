@@ -36,6 +36,5 @@ def create_thing(thing: Thing):
 @app.delete('/thing/{thing_id}')
 def delete_thing(thing_age: int):
     db.pop(thing_id - 1)
-    return
 
 # swaggerUI url ip/docs

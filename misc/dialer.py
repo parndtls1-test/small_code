@@ -14,9 +14,9 @@ def phone_number(keys):
             '0': ' ',
             '': ''
             }
-    
+
     s, result = '', ''
-    
+
     for letter in keys:
         print(letter)
         print(s)
@@ -28,6 +28,5 @@ def phone_number(keys):
 
     result += keypad[s]
     return result
-        
 
 print(phone_number(234))

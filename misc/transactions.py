@@ -1,23 +1,23 @@
 def interpret(command):
     final = ['(']
-        
+
     for char in command:
         if char.isalpha():
             if final[-1] in '(':
                 final.pop()
-            final.append(char)                
-        elif char == '(':            
+            final.append(char)
+        elif char == '(':
             if final[-1] == '(':
                 final.pop()
-            final.append(char)    
+            final.append(char)
         elif char == ')':
             if final[-1] == '(':
                 final.pop()
                 final.append('o')
-        print(final)                           
-            
+        print(final)
+
     return ''.join(final)
-    
+
 
 command = "(al)G(al)()()G"
 #Output
