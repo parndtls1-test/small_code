@@ -14,8 +14,6 @@ app_list = ['app1']#, 'app2']#, 'app3', 'app4', 'app5']
 for app in app_list:
     getid = f'az ad app list --display-name {app}'
     print(getid)
-    res = subprocess.run(getid, shell=True, capture_output=True, check=True)    
+    res = subprocess.run(getid, shell=True, capture_output=True, check=True)
     for line in res.stdout.decode('utf-8').rstrip():
         print(line)
-
-

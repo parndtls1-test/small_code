@@ -6,7 +6,7 @@ import re
 import subprocess
 import sys
 import tempfile
-from wmt_keywhiz.secrets import Secrets
+from wmt_keywhiz.secrets import Secrets # walmart dependant
 
 
 class Rotator:
@@ -42,7 +42,7 @@ class Rotator:
     def delete_key(self, key):
         ''' Delete Key by Name '''
         try:
-            print(f"\nDeleting Existing Key:")
+            print("\nDeleting Existing Key:")
             print(json.dumps(key, indent=2))
             key_id = key['name'].split('/')[-1]
             delete_cmd = f"gcloud iam service-accounts keys delete '{key_id}' --iam-account '{self.account}' --project '{self.project_id}' --quiet"
