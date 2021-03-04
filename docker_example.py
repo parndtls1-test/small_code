@@ -1,3 +1,8 @@
+# azure-cli w/python
+FROM mcr.microsoft.com/azure-cli:latest
+COPY file.py .
+CMD ["python", "file.py"]
+
 # docker #
 # docker info
 # docker images
