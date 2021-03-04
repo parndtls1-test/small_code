@@ -31,4 +31,3 @@ while TOTAL > NUMBER:
     print()
 
 print(ANSWER+1)
-
