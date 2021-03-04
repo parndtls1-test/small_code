@@ -16,12 +16,3 @@ for value in range(1,7):
             break
 
 print(alist)
-
-
-
-
-
-
-
-
-
