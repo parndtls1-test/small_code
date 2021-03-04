@@ -16,3 +16,4 @@ def revoke_active_user(account):
     '''Revove current active gcloud user'''
     user_cmd = f'gcloud auth revoke {account}'
     subprocess.run(user_cmd, shell=True, capture_output=True, check=True)
+    
