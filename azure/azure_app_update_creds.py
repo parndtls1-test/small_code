@@ -24,14 +24,14 @@ def az_shell(cmd):
 def main():
     '''main'''
     # object_ids
-    obj_list = ['31ea3375-52e2-4c24-b5f7-9db91c321670',
-                'dc72b68f-03ca-40a5-bda4-8b0ca685f223']
+    obj_dict = {'app1': '31ea3375-52e2-4c24-b5f7-9db91c321670',
+                'app2': 'dc72b68f-03ca-40a5-bda4-8b0ca685f223'}
 
     login = f'az login --service-principal -u {CLIENT_ID} -p {CLIENT_SECRET} --tenant {TENANT_ID}'
     az_shell(login)
     print()
 
-    for object_id in obj_list:
+    for object_id in obj_dict.values():
         print(f'Application ID: {object_id}')
         reset = f'az ad app credential reset --id {object_id} --credential-description new-password'
         az_shell(reset)
